@@ -27,7 +27,7 @@ async def signup(body: UserSchema, db: AsyncSession = Depends(get_db)):
     return new_user
 
 
-@router.post("/login", response_model=TokenSchema)
+@router.post("/login", response_model=TokenSchema, status_code=status.HTTP_201_CREATED)
 async def login(
         body: OAuth2PasswordRequestForm = Depends(),
         db: AsyncSession = Depends(get_db)
