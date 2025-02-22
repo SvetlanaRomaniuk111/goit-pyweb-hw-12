@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "goit-pyweb-hw-12"
+version = "0.1.0"
+description = ""
+authors = ["SvetlanaRomaniuk111 <gatskosv@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.8"}
+alembic = "^1.14.1"
+sqlalchemy = "^2.0.38"
+asyncpg = "^0.30.0"
+uvicorn = "^0.34.0"
+pydantic = {extras = ["email"], version = "^2.10.6"}
+python-jose = {extras = ["cryptography"], version = "^3.4.0"}
+python-multipart = "^0.0.20"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+bcrypt = "^4.2.1"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
