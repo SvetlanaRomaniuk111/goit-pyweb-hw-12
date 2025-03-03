@@ -2,3 +2,5 @@
 config.ini
 .idea
 __pycache__/
+poetry.lock
+pyproject.toml
